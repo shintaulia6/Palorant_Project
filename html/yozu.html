@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/all_agents.css" />
+    <title>Yozu Agent</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="#" class="logo"><img src="../Source/logo.png" alt="Logo" /></a>
+        <img
+          src="../Source/palorant.png"
+          alt="Palorant"
+          class="palorant-logo"
+        />
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="index2.html">Home</a></li>
+          <li class="nav-link active"><a href="agents.html">Agents</a></li>
+          <li class="nav-link"><a href="news.html">News</a></li>
+          <li class="nav-link"><a href="maps.html">Maps</a></li>
+          <li class="nav-link"><a href="reportBug.html">Report Bug</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="agent-banner">
+        <div class="agent-banner-bg"></div>
+        <div class="header-agent">
+          <h1 class="shadow-title">
+            <span class="text-all_agents">Yozu</span>
+          </h1>
+          <div class="tagline">"Who's Next?"</div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="agent-card">
+          <div class="card border-all_agents">
+            <div class="card-image-container">
+              <img
+                src="../Source/agents_image/yoru/yoru_portrait.webp"
+                alt="yozu Agent"
+                class="card-img"
+              />
+            </div>
+            <ul class="info-list">
+              <li class="info-item">
+                <div class="info-label"><strong>Real Name</strong></div>
+                <div class="info-value">Yoru</div>
+              </li>
+              <li class="info-item border-all_agents">
+                <div class="info-label"><strong>Origin</strong></div>
+                <div class="info-value">Japan</div>
+              </li>
+              <li class="info-item border-all_agents">
+                <div class="info-label"><strong>Affiliation</strong></div>
+                <div class="info-value">Palorant Protocol</div>
+              </li>
+              <li class="info-item badge-container">
+                <div class="badge badge-danger">
+                  <img
+                    height="10"
+                    src="../Source/Duelist.webp"
+                    alt="Duelist Icon"
+                  />
+                  Duelist
+                </div>
+                <div class="badge badge-primary">Male</div>
+                <div class="badge badge-light">Radiant</div>
+                <div class="badge badge-warning">Number 15</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card border-all_agents">
+            <div class="card-header border-all_agents collapsible">
+              <strong>Contract Skin</strong>
+            </div>
+            <div class="card-body contract-content">
+              <div class="contract-zoom">
+                <img
+                  src="../Source/agents_image/yoru/Death_Wish_Sheriff.webp"
+                  alt="yozu Contract Skin"
+                  class="contract-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="agent-details">
+          <div class="card border-all_agents">
+            <div class="card-header border-all_agents collapsible">
+              <strong>Biography</strong>
+            </div>
+            <div class="card-body bio-content">
+              <div class="quote">
+                "Japanese native Yoru rips holes straight through reality to
+                infiltrate enemy lines unseen. Using deception and aggression in
+                equal measure, he gets the drop on each target before they know
+                where to look."
+              </div>
+              <p class="bio-text">
+                Yozu is a sneaky duelist who thrives on deception. With
+                <span class="text-danger">Fakeout</span> to send decoys,
+                <span class="text-danger">Blindside</span> flashes, and a
+                teleporting <span class="text-danger">Gatecrash</span> , he
+                creates chaos and slips through defenses. His ult,
+                <span class="text-danger">Dimensional Drift</span>, lets him
+                roam the map unseen—perfect for surprise plays.
+              </p>
+            </div>
+          </div>
+
+          <div class="card border-all_agents">
+            <div class="card-header border-all_agents collapsible">
+              <strong>Abilities</strong>
+            </div>
+            <div class="card-body abilities-content">
+              <div class="ability-buttons">
+                <button id="a1-btn" class="ability-btn active">
+                  <img
+                    height="64"
+                    src="../Source/agents_abilities/Yozu/Blindside.webp"
+                    alt="Blindside"
+                  />
+                </button>
+                <button id="a2-btn" class="ability-btn">
+                  <img
+                    height="64"
+                    src="../Source/agents_abilities/Yozu/Gatecrash.webp"
+                    alt="Gatecrash"
+                  />
+                </button>
+                <button id="a3-btn" class="ability-btn">
+                  <img
+                    height="64"
+                    src="../Source/agents_abilities/Yozu/Fakeout.webp"
+                    alt="Fakeout"
+                  />
+                </button>
+                <button id="a4-btn" class="ability-btn">
+                  <img
+                    height="64"
+                    src="../Source/agents_abilities/Yozu/Dimensional_Drift.webp"
+                    alt="Dimensional Drift"
+                  />
+                </button>
+              </div>
+
+              <div id="a1" class="ability-content">
+                <h3 class="text-all_agents shadow-title">
+                  <strong>Blindside</strong>
+                </h3>
+                <div class="ability-description">
+                  <strong class="text-warning">EQUIP</strong> to rip an unstable
+                  dimensional fragment from reality.
+                  <strong class="text-warning">FIRE</strong> to throw the
+                  fragment, activating a flash that winds up once it collides
+                  with a hard surface in world.
+                </div>
+                <div class="video-container">
+                  <video id="a1-v" autoplay loop muted>
+                    <source
+                      src="../Source/agents_abilities/Yozu/Blindside.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+
+              <div id="a2" class="ability-content hidden">
+                <h3 class="text-all_agents shadow-title">
+                  <strong>Gatecrash</strong>
+                </h3>
+                <div class="ability-description">
+                  Place a Star in Astral Form (X)
+                  <strong class="text-warning">EQUIP</strong>
+                  a rift tether
+                  <strong class="text-warning">FIRE</strong> to send the tether
+                  forward. <strong class="text-warning">ALT FIRE</strong> to
+                  place a stationary tether.
+                  <strong class="text-warning">ACTIVATE</strong> to teleport to
+                  the tether's location.
+                  <strong class="text-warning">USE</strong> to trigger a fake
+                  teleport.
+                </div>
+                <div class="video-container">
+                  <video id="a2-v" loop muted>
+                    <source
+                      src="../Source/agents_abilities/Yozu/Gatecrash.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+
+              <div id="a3" class="ability-content hidden">
+                <h3 class="text-all_agents shadow-title">
+                  <strong>Fakeout</strong>
+                </h3>
+                <div class="ability-description">
+                  <strong class="text-warning">EQUIP </strong>an echo that
+                  transforms into a mirror image of Yoru when activated
+                  <strong class="text-warning">FIRE </strong> to place the
+                  spycam at the targeted location.to instantly activate the
+                  mirror image.
+                </div>
+                <div class="video-container">
+                  <video id="a3-v" loop muted>
+                    <source
+                      src="../Source/agents_abilities/Yozu/Fakeout.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+
+              <div id="a4" class="ability-content hidden">
+                <h3 class="text-all_agents shadow-title">
+                  <strong>Dimensional Drift</strong>
+                </h3>
+                <div class="ability-description">
+                  <strong class="text-warning">EQUIP </strong>a mask that can
+                  see between dimensions.
+                  <strong class="text-warning">FIRE </strong>to drift into
+                  Yoru's dimension, unable to be affected or seen by enemies
+                  from the outside.
+                </div>
+                <div class="video-container">
+                  <video id="a4-v" loop muted>
+                    <source
+                      src="../Source/agents_abilities/Yozu/Dimensional-Drift.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul>
+          <li class="footer-nav-link"><a href="index2.html">HOME</a></li>
+          <li class="footer-nav-link"><a href="agents.html">AGENTS</a></li>
+          <li class="footer-nav-link"><a href="news.html">NEWS</a></li>
+          <li class="footer-nav-link"><a href="maps.html">MAPS</a></li>
+          <li class="footer-nav-link">
+            <a href="reportBug.html">REPORT BUGS</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer-content">
+        <div class="footer-info">
+          <p class="company">GIOT GAMES</p>
+          <p class="country">Los Angeles, California</p>
+        </div>
+        <div class="sosmed">
+          <div class="sosmed-img">
+            <img src="../Source/SocialMedia/Facebook F.png" alt="" />
+          </div>
+          <div class="sosmed-img">
+            <img src="../Source/SocialMedia/Discord.png" alt="" />
+          </div>
+          <div class="sosmed-img">
+            <img src="../Source/SocialMedia/Instagram.png" alt="" />
+          </div>
+          <div class="sosmed-img">
+            <img src="../Source/SocialMedia/X.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-text">
+        <p>Inspired by VALORANT from RIOT GAMES</p>
+        <p>
+          ©2025 Palorant, Inc. All trademarks referenced herein are the
+          properties of their respective owners.
+        </p>
+      </div>
+    </footer>
+    <script src="../js/all_agent.js"></script>
+    <script src="../js/hamburger.js"></script>
+  </body>
+</html>

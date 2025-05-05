@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/all_agents.css" />
+    <title>Agent Brich</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="#" class="logo"><img src="../Source/logo.png" alt="Logo" /></a>
+        <img
+          src="../Source/palorant.png"
+          alt="Palorant"
+          class="palorant-logo"
+        />
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="index2.html">Home</a></li>
+          <li class="nav-link active"><a href="agents.html">Agents</a></li>
+          <li class="nav-link"><a href="news.html">News</a></li>
+          <li class="nav-link"><a href="maps.html">Maps</a></li>
+          <li class="nav-link"><a href="reportBug.html">Report Bug</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="agent-banner">
+        <div class="agent-banner-bg"></div>
+        <div class="header-agent">
+          <h1 class="shadow-title">
+            <span class="text-all_agents">Brich</span>
+          </h1>
+          <div class="tagline">"Off your feet!"</div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="agent-card">
+          <div class="card border-all_agents">
+            <div class="card-image-container">
+              <img
+                src="../Source/agents_image/Brich/brich.png"
+                alt="Breach Agent"
+                class="card-img"
+              />
+            </div>
+            <ul class="info-list">
+              <li class="info-item">
+                <div class="info-label"><strong>Real Name</strong></div>
+                <div class="info-value">Breach</div>
+              </li>
+              <li class="info-item border-all_agents">
+                <div class="info-label"><strong>Origin</strong></div>
+                <div class="info-value">Sweden</div>
+              </li>
+              <li class="info-item border-all_agents">
+                <div class="info-label"><strong>Affiliation</strong></div>
+                <div class="info-value">Palorant Protocol</div>
+              </li>
+              <li class="info-item badge-container">
+                <div class="badge badge-danger">
+                  <img
+                    height="10"
+                    src="../Source/initiator.svg"
+                    alt="Initiator Icon"
+                  />
+                  Initiator
+                </div>
+                <div class="badge badge-primary">Male</div>
+                <div class="badge badge-light">Human</div>
+                <div class="badge badge-warning">Number 13</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card border-all_agents">
+            <div class="card-header border-all_agents collapsible">
+              <strong>Contract Skin</strong>
+            </div>
+            <div class="card-body contract-content">
+              <div class="contract-zoom">
+                <img
+                  src="../Source/agents_image/Brich/breach_w.png"
+                  alt="Breach Contract Skin"
+                  class="contract-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="agent-details">
+          <div class="card border-all_agents">
+            <div class="card-header border-all_agents collapsible">
+              <strong>Biography</strong>
+            </div>
+            <div class="card-body bio-content">
+              <div class="quote">
+                "Breach, the bionic Swede, fires powerful, targeted kinetic
+                blasts to aggressively clear a path through enemy ground. The
+                damage and disruption he inflicts ensures no fight is ever
+                fair."
+              </div>
+              <p class="bio-text">
+                Breach's main gimmick is the ability to use all of his abilities
+                through the geometry of the map, whether it is
+                <span class="text-danger">through walls, roofs, or terrain</span
+                >. He can send an
+                <span class="text-danger"
+                  >Aftershock to blow up enemy cover</span
+                >
+                and <span class="text-danger">Flashpoints to blind</span> all
+                enemies. Using powerful kinetic blast, Breach can create
+                <span class="text-danger">Seismic Blasts</span>, which
+                <span class="text-danger">dazes</span> all enemies hit.
+              </p>
+            </div>
+          </div>
+
+          <div class="card border-all_agents">
+            <div class="card-header border-all_agents collapsible">
+              <strong>Abilities</strong>
+            </div>
+            <div class="card-body abilities-content">
+              <div class="ability-buttons">
+                <button id="a1-btn" class="ability-btn active">
+                  <img
+                    height="64"
+                    src="../Source/agents_abilities/Brich/Aftershock.webp"
+                    alt="Aftershock"
+                  />
+                </button>
+                <button id="a2-btn" class="ability-btn">
+                  <img
+                    height="64"
+                    src="../Source/agents_abilities/Brich/Flashpoint.webp"
+                    alt="Flashpoint"
+                  />
+                </button>
+                <button id="a3-btn" class="ability-btn">
+                  <img
+                    height="64"
+                    src="../Source/agents_abilities/Brich/Fault_Line.webp"
+                    alt="Fault Line"
+                  />
+                </button>
+                <button id="a4-btn" class="ability-btn">
+                  <img
+                    height="64"
+                    src="../Source/agents_abilities/Brich/Rolling_Thunder.webp"
+                    alt="Rolling Thunder"
+                  />
+                </button>
+              </div>
+
+              <div id="a1" class="ability-content">
+                <h3 class="text-all_agents shadow-title">
+                  <strong>Aftershock</strong>
+                </h3>
+                <div class="ability-description">
+                  <strong class="text-warning">START</strong> the fusion power.
+                  <strong class="text-warning">SHOOT</strong> he power to
+                  prepare a slow-action blast through walls. The blast deals
+                  heavy damage to everything in its area.
+                </div>
+                <div class="video-container">
+                  <video id="a1-v" autoplay loop muted>
+                    <source
+                      src="../Source/agents_abilities/Brich/breach_1_v.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+
+              <div id="a2" class="ability-content hidden">
+                <h3 class="text-all_agents shadow-title">
+                  <strong>Flashpoint</strong>
+                </h3>
+                <div class="ability-description">
+                  <strong class="text-warning">PREPARE</strong> blinding power.
+                  <strong class="text-warning">SHOOT</strong> the power to
+                  prepare a fast-action burst through walls. The blast blinds
+                  all players in sight.
+                </div>
+                <div class="video-container">
+                  <video id="a2-v" loop muted>
+                    <source
+                      src="../Source/agents_abilities/Brich/breach_2_v.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+
+              <div id="a3" class="ability-content hidden">
+                <h3 class="text-all_agents shadow-title">
+                  <strong>Fault Line</strong>
+                </h3>
+                <div class="ability-description">
+                  <strong class="text-warning">PREPARE</strong> for a seismic
+                  blast. <strong class="text-warning">HOLD FIRE</strong> to
+                  increase range.
+                  <strong class="text-warning">RELEASE</strong> to generate an
+                  earthquake, disrupting all players in its zone and on the path
+                  to it.
+                </div>
+                <div class="video-container">
+                  <video id="a3-v" loop muted>
+                    <source
+                      src="../Source/agents_abilities/Brich/breach_3_v.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+
+              <div id="a4" class="ability-content hidden">
+                <h3 class="text-all_agents shadow-title">
+                  <strong>Rolling Thunder</strong>
+                </h3>
+                <div class="ability-description">
+                  <strong class="text-warning">SET UP</strong> Seismic Charge.
+                  <strong class="text-warning">SHOOT</strong> to send a series
+                  of earthquakes through the entire land in the shape of a large
+                  cone. The quakes paralyze and knock over everything in it.
+                </div>
+                <div class="video-container">
+                  <video id="a4-v" loop muted>
+                    <source
+                      src="../Source/agents_abilities/Brich/breach_4_v.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul>
+          <li class="footer-nav-link"><a href="index2.html">HOME</a></li>
+          <li class="footer-nav-link"><a href="agents.html">AGENTS</a></li>
+          <li class="footer-nav-link"><a href="news.html">NEWS</a></li>
+          <li class="footer-nav-link"><a href="maps.html">MAPS</a></li>
+          <li class="footer-nav-link">
+            <a href="reportBug.html">REPORT BUGS</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer-content">
+        <div class="footer-info">
+          <p class="company">GIOT GAMES</p>
+          <p class="country">Los Angeles, California</p>
+        </div>
+        <div class="sosmed">
+          <div class="sosmed-img">
+            <img src="../Source/SocialMedia/Facebook F.png" alt="" />
+          </div>
+          <div class="sosmed-img">
+            <img src="../Source/SocialMedia/Discord.png" alt="" />
+          </div>
+          <div class="sosmed-img">
+            <img src="../Source/SocialMedia/Instagram.png" alt="" />
+          </div>
+          <div class="sosmed-img">
+            <img src="../Source/SocialMedia/X.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-text">
+        <p>Inspired by VALORANT from RIOT GAMES</p>
+        <p>
+          ©2025 Palorant, Inc. All trademarks referenced herein are the
+          properties of their respective owners.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/all_agent.js"></script>
+    <script src="../js/hamburger.js"></script>
+  </body>
+</html>
